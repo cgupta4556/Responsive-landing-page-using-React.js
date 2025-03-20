@@ -1,229 +1,370 @@
 /* Global Styles */
 :root {
-    --primary-color: #ff7f50;
-    --secondary-color: #ff7f50;
-    --background-color: #f8f9fa;
-    --text-color: #333;
-    --primary-hover-color: #a9ccf0;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-  
-  /* Services Section */
-  .services {
-    padding: 4rem 2rem;
-    background: white;
-  }
-  
-  .service-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .service-card {
-    background: var(--primary-color);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    width: 280px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Pricing Table */
-  .pricing {
-    padding: 4rem 2rem;
-    background: var(--background-color);
-  }
-  
-  .pricing-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .pricing-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    width: 280px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pricing-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .pricing-card h4 {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-  }
-  
-  .pricing-card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .pricing-card ul li {
-    padding: 5px;
-  }
-  
-  /* User Search */
-  .user-search {
-    padding: 3rem 2rem;
-    text-align: center;
-    background: white;
-  }
-  
-  .user-search input {
-    width: 60%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  
-  .user-search ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .user-search ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Contact Form */
-  .contact {
-    padding: 4rem 2rem;
-    background: var(--background-color);
-    text-align: center;
-  }
-  
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  .contact input,
-  .contact textarea {
-    margin-bottom: 10px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact textarea {
-    height: 100px;
-    resize: none;
-  }
-  
-  .contact button {
-    background: var(--primary-color);
-    color: white;
-    padding: 12px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .contact button:hover {
-    background: var(--primary-hover-color);
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero-content h1 {
+  --primary-color: #ff7f50;
+  --secondary-color: #ff7f50;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --primary-hover-color: #a9ccf0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pricing Table */
+.pricing {
+  padding: 4rem 2rem;
+  background: var(--background-color);
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card h4 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  padding: 5px;
+}
+
+/* User Search */
+.user-search {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-search input {
+  background-color: #ee845e;
+  color: white;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+.user-search input::placeholder{
+  color: white;
+}
+.user-search .user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.user-search ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-search ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Contact Form */
+.contact {
+  padding: 4rem 2rem;
+  background: var(--background-color);
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  height: 200px;
+  width: 425px;
+  resize: none;
+}
+
+.contact button {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: var(--primary-hover-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
       font-size: 2.5rem;
-    }
-  
-    .service-container,
-    .pricing-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .user-search input {
-      width: 100%;
-    }
   }
 
-  /* Hero Section */
+  .service-container,
+  .pricing-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .user-search input {
+      width: 100%;
+  }
+}
+
+/* Hero Section */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full-screen height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Background Image with Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/image2.jpg") no-repeat center center/cover;
+  filter: blur(1px) brightness(50%);
+  z-index: -1;
+}
+
+.hero-content {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  background: var(--secondary-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #ff5733;
+}
+ 
+/* User Card */
+/* Improved Fixed-Size User Cards */
+.user-card {
+  background: white;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid var(--primary-color);
+  width: 280px; 
+  height: 200px;
+  overflow: hidden;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.user-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Transparent Navbar CSS */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Transparent Background Initially */
+.navbar {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Background appears when scrolled */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.9); /* Light Blur Effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.logo {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff7f50;
+}
+
+/* Navbar Links */
+.nav-links {
+  margin-right: 80px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff; /* White when transparent */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change link color when scrolled */
+.navbar.scrolled .nav-links a {
+  color: #333;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
   }
-  
-  /* Background Image with Overlay */
-  .hero::before {
-    content: "";
+
+  .nav-links {
+    flex-direction: column;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("./assets/image2.jpg") no-repeat center center/cover;
-    filter: blur(2px) brightness(50%);
-    z-index: -1;
+    top: 60px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 15px;
   }
-  
-  .hero-content {
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    z-index: 1;
+
+  .navbar.scrolled .nav-links {
+    background: white;
   }
-  
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+
+  .nav-links.active {
+    display: flex;
   }
-  
-  .cta-button {
-    background: var(--secondary-color);
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.3s;
-  }
-  
-  .cta-button:hover {
-    background: #ff5733;
-  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,20 +1,20 @@
-import React, { useRef } from "react";
+import React from "react";
 import HeroSection from "../components/HeroSection";
 import Services from "../components/Services";
 import PricingTable from "../components/PricingTable";
 import ContactForm from "../components/ContactForm";
 import UserSearch from "../components/UserSearch";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
-  const servicesRef = useRef(null);
-
   return (
     <div>
-      <HeroSection scrollToServices={() => servicesRef.current.scrollIntoView({ behavior: "smooth" })} />
-      <Services refProp={servicesRef} />
-      <PricingTable />
-      <UserSearch />
-      <ContactForm />
+      <Navbar />
+      <section id="home"><HeroSection /></section>
+      <section id="services"><Services /></section>
+      <section id="pricing"><PricingTable /></section>
+      <section id="user-search"><UserSearch /></section>
+      <section id="contact"><ContactForm /></section>
     </div>
   );
 };
