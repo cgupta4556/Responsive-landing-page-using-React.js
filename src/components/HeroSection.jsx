@@ -1,13 +1,20 @@
 import React from "react";
 import "../styles.css";
 
-const HeroSection = ({ scrollToServices }) => {
+const HeroSection = () => {
+  const handleScrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Welcome to Our Service</h1>
-        <p>Your gateway to innovative solutions</p>
-        <button className="cta-button" onClick={scrollToServices}>
+        <h1>Welcome to MyApp</h1>
+        <p>Your one-stop solution for all services</p>
+        <button className="cta-button" onClick={handleScrollToServices}>
           Get Started
         </button>
       </div>
